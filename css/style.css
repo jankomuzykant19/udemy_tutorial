@@ -1,0 +1,84 @@
+h1{
+    color: orange;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.image-banner{
+    position:relative;
+}
+
+.image-banner img{
+    display: block;
+}
+
+.banner-descrpiton{
+    position: absolute;
+    bottom: 0;
+    left: 554px;
+    color: white;
+    background-color: rgba(0, 0, 0, .65);
+    padding: 15px 25px;
+    margin-right: 501px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateY(100%);
+}
+
+.image-banner:hover .banner-descrpiton{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header p{
+    color: green;
+}
+
+header p span{
+    color: indigo;
+}
+
+.article-body{
+    background-color: khaki;
+}
+
+.navbar li{
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    margin-top: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: orangered;
+    padding: 10px 20px;
+    border: 3px solid black;
+}
+.navbar a:hover{
+    background-color: black;
+}
+
+@keyframes fadeBounce{
+    0%{
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
